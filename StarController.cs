@@ -4,10 +4,10 @@ using System.Collections;
 /*
  * File Name	 	  : StarController.cs
  * Author   		  : Austin Khamsisavadty 100942529
- * Last Modified	  : 10/27/2016
- * Date Last Modified : 10/27/2016
+ * Last Modified	  : 10/30/2016
+ * Date Last Modified : 10/30/2016
  * Description		  : Controls star sprite
- * Revision			  : 0.1
+ * Revision			  : 1.0
  * */
 
 public class StarController : MonoBehaviour {
@@ -38,9 +38,9 @@ public class StarController : MonoBehaviour {
 		}
 	}
 
-	public void Reset(){
+	public void Reset(){ //reset star
 		float xpos = Random.Range (6f, 20f);
-		float ypos = Random.Range (-2.9f, 2.6f);
+		float ypos = Random.Range (-2.5f, 2.6f);
 		_currentPosition = new Vector2 (xpos, ypos);
 		_transform.position = _currentPosition;
 	}

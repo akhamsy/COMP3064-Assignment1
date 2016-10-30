@@ -4,10 +4,10 @@ using System.Collections;
 /*
  * File Name	 	  : BackgroundController.cs
  * Author   		  : Austin Khamsisavadty 100942529
- * Last Modified	  : 10/27/2016
- * Date Last Modified : 10/27/2016
+ * Last Modified	  : 10/30/2016
+ * Date Last Modified : 10/30/2016
  * Description		  : Controls background
- * Revision			  : 0.1
+ * Revision			  : 1.0
  * */
 
 public class BackgroundController : MonoBehaviour {
@@ -21,26 +21,32 @@ public class BackgroundController : MonoBehaviour {
 
 	//Initialization
 	void Start () {
+
 		_transform = gameObject.GetComponent<Transform>();
 		_currentPosition = _transform.position;
 		Reset ();
+
 	}
 
 	// Update is called once per frame
 	void Update () {
+
 		_currentPosition = _transform.position;
 
 		_currentPosition -= new Vector2 (speed, 0);
 		_transform.position = _currentPosition;
 
-		if (_currentPosition.x <= -18.7f) {
+		if (_currentPosition.x <= -20f) {
 			Reset ();
+
 		}
 	}
 
+    //Reset background to start once end is reached
 	private void Reset(){
 
-		_currentPosition = new Vector2 (18.7f, -0.03f);
+		_currentPosition = new Vector2 (20f, -0.03f);
 		_transform.position = _currentPosition;
+
 	}
 }

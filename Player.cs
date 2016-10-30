@@ -4,10 +4,10 @@ using System.Collections;
 /*
  * File Name	 	  : Player.cs
  * Author   		  : Austin Khamsisavadty 100942529
- * Last Modified	  : 10/27/2016
- * Date Last Modified : 10/27/2016
+ * Last Modified	  : 10/30/2016
+ * Date Last Modified : 10/30/2016
  * Description		  : player class
- * Revision			  : 0.1
+ * Revision			  : 1.0
  * */
 
 public class Player  {
